@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanmay-PortFolio</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://kit.fontawesome.com/2cb0efaf35.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="app_header">
+        <div class="app_header-container">
+            <nav>
+                <h1 class="app_header-container-logo"><span>T</span>anmay</h1>
+                <ul id="sidemenu">
+                    <li><a href="#app_header">Home</a></li>
+                    <li><a href="#app_about">About</a></li>
+                    <li><a href="#app_services">Services</a></li>
+                    <li><a href="#app_portfolio">Portfolio</a></li>
+                    <li><a href="#app_contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="app_header-container-text">
+                <div class="typewriter">
+                    <p class="typed-out">Frontend Web Developer</p>
+                </div>
+                <h1>Hi, I'm <span>Tanmay</span><br> Pandey from India</h1>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ABOUT SECTION -->
+
+<div id="app_about">
+    <div class="app_about-container">
+        <div class="app_about-container-row">
+            <div class="app_about-container-row-image">
+                <img src="../assets/photo.jpeg">
+            </div>
+            <div class="app_about-container-row-text">
+                <h1 class="sub-title">About Me</h1>
+                <p>Welcome to my Porfolio! My name is Tanmay Pandey and I am 3rd year  undergraduate at IIT Roorkee. Alongside my academic pursuits, I am also a frontend developer with skills in HTML, CSS, JavaScript, and ReactJs.
+                    <br>
+                    As a fast and curious learner, I am always seeking new challenges and opportunities to grow both personally and professionally. I am passionate about staying up-to-date with the latest trends and technologies in my field and applying them to my work.</p>
+                <div class="app_about-container-row-text-tab-titles">
+                    <p class="app_about-container-row-text-tab-titles-links app_about-container-row-text-tab-titles-active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="app_about-container-row-text-tab-titles-links" onclick="opentab('achievement')">Achievement</p>
+                    <p class="app_about-container-row-text-tab-titles-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div id="skills" class="app_about-container-row-text-tab-contents app_about-container-row-text-tab-active-content">
+                    <ul>
+                        <li><span>Frontend Web Development</span>
+                            <br> 
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>ReactJS</li>
+                            </ul>
+                              
+                        </li>
+                    </ul>
+                </div>
+                <div id="achievement" class="app_about-container-row-text-tab-contents">
+                    <ul>
+                        <li><span>JEE ADVANCED - 2021</span>
+                            <br>Secured All India Rank - 9212 out of over 2 lakh candidates in World's 2nd toughest examination.<br>
+                        </li>
+                        <li><span>JEE MAINS - 2021</span>
+                            <br>Secured All India Rank - 14460 out of over 1 million candidates.<br>
+                        </li>
+                    </ul>
+                </div>
+                <div id="education" class="app_about-container-row-text-tab-contents">
+                    <ul>
+                        <li><span>X CBSE BOARD : 2018-19</span>
+                            <br>Scored 97%<br>
+                        </li>
+                        <li><span>XII CBSE BOARD : 2020-21</span>
+                            <br>Scored 78.4%<br>
+                        </li>
+                        <li><span>INTEGRATED MTECH : 2021-26</span>
+                            <br> I am currently pursuing my undergraduate degree in Geophysical Technology at IIT Roorkee<br>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SERVICES SECTION -->
+
+<div id="app_services">
+    <div class="app_services-container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="app_services-container-services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web App Development</h2>
+                <p>
+                    I specialize in web app development, leveraging HTML, CSS, JavaScript, ReactJS, and API integration to create seamless and functional applications for clients.</p>
+                <!-- <a href="">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Website Development</h2>
+                <p>I provide comprehensive frontend website development services, employing HTML, CSS, JavaScript, ReactJS, and API integration to deliver engaging, responsive, and feature-rich websites for businesses and individuals.</p>
+                <!-- <a href="">Learn more</a> -->
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- PORTFOLIO SECTION -->
+
+<div id="app_portfolio">
+    <div class="app_portfolio-container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="app_portfolio-container-work-list">
+          <div class="app_portfolio-container-work">
+              <img src="../assets/work-1.png">
+              <div class="app_portfolio-container-work-layer">
+                <h3>ToDo Web App</h3>
+                <p>
+                    My project, "ToDo List", utilizes ReactJS, HTML, CSS, and local storage for creating, reading, updating, and deleting lists, along with a search bar for specific item lookup.</p>
+                <a href="https://tanmaytodolist.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          <div class="app_portfolio-container-work">
+              <img src="../assets/work-2.png">
+              <div class="app_portfolio-container-work-layer">
+                <h3>Bella Onojie - Food ordering website</h3>
+                <p>Introducing "Bella Onojie," a food ordering website. With HTML, CSS, and ReactJS, I've crafted a responsive home page featuring a hamburger menu for small screens, ensuring an optimal experience across all devices.</p>
+                <a href="https://bellaonojiee.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          <div class="app_portfolio-container-work">
+              <img src="../assets/work-3.png">
+              <div class="app_portfolio-container-work-layer">
+                <h3>PortFolio Website</h3>
+                <p>Presenting my portfolio website, created using HTML, CSS, and JavaScript. This fully responsive site boasts smooth transitions and a functional contact form that seamlessly connects to a Google Sheet for easy management.</p>
+                <a href="https://tanmaytodolist.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+        </div>
+        <a href="#app_portfolio" class="btn">See More</a>
+    </div>    
+</div>
+
+<!-- CONTACT SECTION -->
+
+<div id="app_contact">
+    <div class="app_contact-container">
+        <div class="app_contact-container-row"> 
+         <div class="app_contact-container-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>tanmayiitroorkee17@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>9580662142</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100075001353643"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/tanmayIITR17"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/tanmayiitr17/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/tanmay-pandey-03281b232/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="../assets/my_resume.pdf" download class="btn btn2">Download CV</a>
+         </div>
+         <div class="app_contact-container-right">
+            <form name='submit-to-google-sheet'>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type='submit' class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+         </div>
+        </div> 
+    </div>
+    <div class="copyright">
+        <p>Copyright  &copy; Tanmay.</p>
+    </div>
+</div>
+<script>let tablinks = document.getElementsByClassName(
+    "app_about-container-row-text-tab-titles-links"
+  );
+  let tabcontents = document.getElementsByClassName(
+    "app_about-container-row-text-tab-contents"
+  );
+  
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove(
+        "app_about-container-row-text-tab-titles-active-link"
+      );
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove(
+        "app_about-container-row-text-tab-active-content"
+      );
+    }
+    event.currentTarget.classList.add(
+      "app_about-container-row-text-tab-titles-active-link"
+    );
+    document
+      .getElementById(tabname)
+      .classList.add("app_about-container-row-text-tab-active-content");
+  }
+  
+</script>
+
+<script>   
+   let sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemeu.style.right = "0px";
+    }
+    
+    function closemenu() {
+      sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+ 
+    const scriptURL =
+  "https://script.google.com/macros/s/AKfycbyGwD2_3ElcLL_pKoO22LL65K5GnipUlKAafwXGk6JUusf5ZOc89YiOgBL_KwdTtNE/exec";
+const form = document.forms["submit-to-google-sheet"];
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = "Message sent successfully";
+      setTimeout(function () {
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+</script>
+</body>
+</html>

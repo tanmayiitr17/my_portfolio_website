@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+
+#app_header{
+    width: 100%;
+    height: 100vh;
+    /* background: url(../assets/background-laptop.png);
+    background-position:center;
+    background-size: cover; */
+  background-image:url(../assets/background-laptop4.jpeg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app_header-container{
+    padding: 10px 10%;
+}
+
+.app_header-container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+.app_header-container-logo{
+    width: 150px;
+    font-size: 40px;
+}
+
+.app_header-container-logo span{
+    color: #ff004f;
+}
+
+.app_header-container li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.app_header-container li a{
+     color: #fff;
+     text-decoration: none;
+     font-size: 20px;
+     position: relative;
+}
+
+.app_header-container li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.app_header-container li a:hover::after{
+       width: 100%;
+}
+
+.app_header-container-text{
+    margin-top: 20% ;
+    font-size: 30px;
+}
+
+.typewriter{
+    display: inline-block;
+}
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid #ff004f;
+    white-space: nowrap;
+    font-size: 2rem;
+    width: 0;
+    animation: 
+    typing 3s steps(20, end) forwards,
+    blink .8s infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: #ff004f;}
+}
+
+.app_header-container-text h1{
+    margin-top: 0px ;
+    font-size: 60px;
+}
+
+.app_header-container-text h1 span{
+    color: #ff004f;
+}
+
+
+/* ABOUT SECTION */
+
+#app_about{
+    padding: 80px 10%;
+    color: #ababab;
+}
+
+.app_about-container-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.app_about-container-row-image{
+     flex-basis: 35%;
+}
+
+.app_about-container-row-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.app_about-container-row-text{
+     flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.app_about-container-row-text-tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.app_about-container-row-text-tab-titles-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.app_about-container-row-text-tab-titles-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.app_about-container-row-text-tab-titles-active-link::after{
+   width: 50%;
+}
+
+.app_about-container-row-text-tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.app_about-container-row-text-tab-contents ul li span{
+    color: #b54769;
+    font-size: 24px;
+}
+
+.app_about-container-row-text-tab-contents{
+    display: none;
+}
+
+.app_about-container-row-text-tab-active-content{
+    display: block;
+}
+
+/* SERVICES SECTION */
+#app_services{
+    padding: 30px 10%;
+}
+
+.app_services-container-services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.app_services-container-services-list div{
+     background: #262626;
+     padding: 40px;
+     font-size: 13px;
+     font-weight: 300;
+     border-radius: 10px;
+     transition: background 0.5s,transfrom 0.5s;
+}
+
+.app_services-container-services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.app_services-container-services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.app_services-container-services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.app_services-container-services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+/* PORTFOLIO SECTION */
+
+#app_portfolio{
+    padding: 50px 10%;
+}
+
+.app_portfolio-container-work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.app_portfolio-container-work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.app_portfolio-container-work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.app_portfolio-container-work-layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.app_portfolio-container-work-layer h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.app_portfolio-container-work-layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.app_portfolio-container-work:hover img{
+transform: scale(1.1);
+}
+
+.app_portfolio-container-work:hover .app_portfolio-container-work-layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+/* CONTACT SECTION */
+
+.app_contact-container-row{
+    display: flex;
+    padding: 10px 10%;
+}
+
+.app_contact-container-left{
+    flex-basis: 35%;
+}
+
+.app_contact-container-right{
+    flex-basis: 60%;
+}
+
+.app_contact-container-left p{
+    margin-top: 30px;
+}
+
+.app_contact-container-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 15px;
+   color: #ababab;
+   display: inline-block;
+   transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+display: inline-block;
+background: #ff004f;
+}
+
+.app_contact-container-right form{
+      width: 100%;
+}
+
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+ 
+
+
+/* CSS FOR SMALL SCREEN */
+
+@media only screen and (max-width:900px){
+
+nav .fa-solid{
+    display: block;
+    font-size: 25px;
+}
+
+nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 187px;
+    height: 100vh;
+    padding-top: 100px;
+    z-index: 2;
+    transition: right 1s;
+}
+
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+
+nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+} 
+
+@media only screen and (max-width:450px){
+    
+    .app_header-container-text{
+        margin-top: 125%;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px){
+    .app_header-container-text{
+        margin-top: 95% ;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:600px){
+    #app_header{ 
+        background: url(../assets/phone-background.jpeg);
+        background-position: center;
+    }
+ 
+    .typed-out{
+        font-size: 1.3rem;
+    }
+    
+    .app_header-container-text h1{ 
+        font-size: 30px;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .app_about-container-row-image,.app_about-container-row-text{
+        flex-basis: 100%;
+    }
+
+    .app_about-container-row-image{
+        margin-bottom: 30px;
+    }
+
+    .app_about-container-row-text{
+        font-size: 14px;
+    }
+
+    .app_about-container-row-text-tab-titles-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .app_contact-container-row{
+          flex-direction: column;
+    }
+
+    .app_contact-container-left,.app_contact-container-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
